@@ -1,9 +1,7 @@
-const urlString = window.location.search;
-const urlParams = new URLSearchParams(urlString);
-
-let query = urlParams.get("query");
-
 async function getDefinitions() {
+    // get query:
+    let query = document.getElementById("search_field").value;
+
     const URL = `https://api.dictionaryapi.dev/api/v2/entries/en/${query}`;
 
     let obj;
@@ -16,12 +14,11 @@ async function getDefinitions() {
     let element = document.getElementById("result");
 
     let html = "";
-    document.getElementsByTagName("h1")[0].innerHTML = `Word: <span class="word">"${query}"</span>`;
+    document.getElementById("result_title").innerHTML = `Word: <span class="word">"${query}"</span>`;
 
     // check to make sure it's a word:
 
     if ("title" in obj) {
-        console.log(`${query} is NOT a word!`);
         html += "Sorry, pal. No definitions of that word could be found.";
         element.innerHTML = html;
         return;
@@ -49,6 +46,13 @@ async function getDefinitions() {
     }
 
     element.innerHTML = html;
+
+    document.getElementById("result_modal").style.display = "block";
+
+    document.getElementById("search_field").value = "";
 }
 
-getDefinitions();
+document.getElementById("search_form").onsubmit = function() {
+    getDefinitions();
+    return false;
+}

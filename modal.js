@@ -1,20 +1,26 @@
-let modal = document.getElementById("about_modal");
+let aboutModal = document.getElementById("about_modal");
+let aboutOpen = document.getElementById("about_btn");
+let aboutClose = document.getElementById("about_close_btn");
 
-let open = document.getElementById("about_btn");
+let resultModal = document.getElementById("result_modal");
+let resultClose = document.getElementById("result_close_btn");
 
-let close = document.getElementById("close_btn");
-
-open.onclick = function() {
-    modal.style.display = "block";
+aboutOpen.onclick = function() {
+    aboutModal.style.display = "block";
 }
 
-close.onclick = function() {
+aboutClose.onclick = function() {
     modal.style.display = "none";
 }
 
+resultClose.onclick = function() {
+    resultModal.style.display = "none";
+}
+
 window.onclick = function(event) {
-    console.log(event);
-    if (event.target == modal) {
-        modal.style.display = "none";
+    if (event.target == aboutModal) {
+        aboutModal.style.display = "none";
+    } else if (event.target == resultModal) {
+        resultModal.style.display = "none";
     }
 }

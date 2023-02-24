@@ -6,23 +6,32 @@
     </head>
     <body>
         <div id="about_modal">
-            <div id="modal_content" class="floating_box center">
-                <a>
-                    <img src="imgs/plus.png" class="close_btn" id="close_btn"></img>
-                </a>
+            <div class="modal_content floating_box center">
+                <img src="imgs/plus.png" class="close_btn" id="about_close_btn">
                 <h1>About</h1>
                 <p>This is Goggle, a spoof of the website <a href="https://www.google.com">Google</a>. This is merely for fun, and I am not in any way claiming to be Google.</p>
+            </div>
+        </div>
+        <div id="result_modal">
+            <div class="modal_content floating_box center">
+                <img src="imgs/plus.png" class="close_btn" id="result_close_btn">
+                <img src="imgs/logo.png" class="logo">
+                <h1 id="result_title"></h1>
+                <p id="result"></p>
+                <br>
+                <hr>
+                <p>All defintions provided by <a href="https://dictionaryapi.dev/">dictionaryapi.dev</a>. <b>Many</b> thanks!</p>
             </div>
         </div>
         <div id="header">
             <button id="about_btn">About</button>
         </div>
         <div class="center">
-            <img src="imgs/logo.png" id="logo">
+            <img src="imgs/logo.png" class="logo">
             <div id="search_bar">
-                <form autocomplete="off" action="results.html" method="get">
+                <form autocomplete="off" id="search_form">
                     <img src="imgs/search.png" id="search_icon">
-                    <input id="search_field" type="text" placeholder="Search Goggle for a word..." name="query">
+                    <input id="search_field" type="text" placeholder="Search Goggle for a word...">
                 </form>
             </div>
             <div id="widgets_container">
@@ -40,5 +49,6 @@
             </div>
         </div>
     <script src="modal.js"></script>
+    <script src="results.js"></script>
     </body>
 </html>
