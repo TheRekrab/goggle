@@ -7,7 +7,7 @@
    viewBox="0 0 210 297"
    version="1.1"
    id="svg5"
-   inkscape:export-filename="search.png"
+   inkscape:export-filename="search_dark.png"
    inkscape:export-xdpi="96"
    inkscape:export-ydpi="96"
    inkscape:version="1.2.2 (b0a8486541, 2022-12-01)"
@@ -43,13 +43,13 @@
      inkscape:groupmode="layer"
      id="layer1">
     <circle
-       style="fill:none;stroke:#1a1a1a;stroke-width:18.5208;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;paint-order:stroke fill markers"
+       style="fill:none;stroke:#cccccc;stroke-width:18.5208;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;paint-order:stroke fill markers"
        id="path1929"
        cx="74.306374"
        cy="99.384735"
        r="39.032875" />
     <path
-       style="fill:none;stroke:#1a1a1a;stroke-width:18.5208;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;paint-order:stroke fill markers"
+       style="fill:none;stroke:#cccccc;stroke-width:18.5208;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;paint-order:stroke fill markers"
        d="m 100.69585,140.81059 51.76864,89.66591"
        id="path2093" />
   </g>

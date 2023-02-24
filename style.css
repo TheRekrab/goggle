@@ -1,5 +1,13 @@
+:root {
+    --background-color: whitesmoke;
+    --shadow-color: #c2c2c2;
+    --maintext-color: black;
+    --search-color: grey;
+}
+
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: var(--background-color);
 }
 
 a {
@@ -16,7 +24,7 @@ a {
     width: 700px;
     padding: 20px;
     margin: 100px auto;
-    box-shadow: 0px 0px 10px 1px grey;
+    box-shadow: 0px 0px 10px 1px var(--shadow-color);
     border-radius: 20px;
 }
 
@@ -50,16 +58,17 @@ Search bar:
     padding-left: 25px;
     padding-right: 25px;
     text-align: left;
-    box-shadow: 0px 0px 10px 1px #c2c2c2;
+    box-shadow: 0px 0px 10px 1px var(--shadow-color);
     border-radius: 50px;
 }
 
 #search_field {
     outline: none;
     border: none;
-    color: grey;
+    color: var(--search-color);
     font-size: 17px;
     width: 90%;
+    background: none;
 }
 
 /*
@@ -83,7 +92,7 @@ Widgets
 
 #widgets_container div img {
     width: 40px;
-    box-shadow: 0px 0px 10px 1px grey;
+    box-shadow: 0px 0px 10px 1px var(--shadow-color);
     padding: 10px;
     border-radius: 50px;
     margin: 20px;
@@ -97,7 +106,7 @@ Widgets
 }
 
 #widgets_container div a {
-    color: black;
+    color: var(--maintext-color);
     text-decoration: none;
 }
 
@@ -127,16 +136,17 @@ About modal:
 }
 
 .modal_content {
-    background: white;
+    background: var(--background-color);
     position: relative;
     animation-name: animatetop;
-    animation-duration: 0.4s
+    animation-duration: 0.4s;
+    color: var(--maintext-color);
 }
 
 #about_btn {
     border: none;
     background: transparent;
-    color: black;
+    color: var(--maintext-color);
 }
 
 #about_btn:hover {

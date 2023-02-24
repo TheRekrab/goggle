@@ -10,7 +10,7 @@ aboutOpen.onclick = function() {
 }
 
 aboutClose.onclick = function() {
-    modal.style.display = "none";
+    aboutModal.style.display = "none";
 }
 
 resultClose.onclick = function() {
