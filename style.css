@@ -2,10 +2,28 @@ body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
+a {
+    text-decoration: none;
+    color: #d1325d;
+}
+
 .center {
     margin: 200px auto;
-    width: 100%;
     text-align: center;
+}
+
+.floating_box {
+    width: 600px;
+    padding: 20px;
+    margin: 100px auto;
+    box-shadow: 0px 0px 10px 1px grey;
+    border-radius: 20px;
+}
+
+.close_btn {
+    transform: rotate(45deg);
+    width: 20px;
+    float: right;
 }
 
 #logo {
@@ -77,4 +95,12 @@ Widgets
 #widgets_container div a {
     color: black;
     text-decoration: none;
+}
+
+/*
+results.html styling
+*/
+
+.word {
+    font-family: 'Courier New', Courier, monospace;
 }
