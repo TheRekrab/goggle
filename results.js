@@ -46,13 +46,11 @@ async function getDefinitions() {
     }
 
     element.innerHTML = html;
-
-    document.getElementById("result_modal").style.display = "block";
-
-    document.getElementById("search_field").value = "";
 }
 
 document.getElementById("search_form").onsubmit = function() {
     getDefinitions();
+    document.getElementById("result_modal").style.display = "block";
+    document.getElementById("search_field").value = "";
     return false;
 }
