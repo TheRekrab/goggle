@@ -1,3 +1,7 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
 .center {
     margin: 200px auto;
     width: 100%;
@@ -9,6 +13,9 @@
     margin: 50px;
 }
 
+/*
+Search bar:
+*/
 #search_icon {
     height: 17px;
     margin-right: 30px;
@@ -31,4 +38,43 @@
     color: grey;
     font-size: 17px;
     width: 90%;
+}
+
+/*
+Widgets
+*/
+
+#widgets_container {
+    width: 40%;
+    padding: 20px;
+    margin: 50px auto;
+}
+
+#widgets_container div {
+    display: inline-block;
+    margin: 10px;
+}
+
+#widgets_container div:hover {
+    cursor: pointer;
+}
+
+#widgets_container div img {
+    width: 40px;
+    box-shadow: 0px 0px 10px 1px grey;
+    padding: 10px;
+    border-radius: 50px;
+    margin: 20px;
+    transition: margin 0.2s, width 0.2s, transform 0.9s ease-in-out;
+}
+
+#widgets_container div img:hover {
+    width: 50px;
+    margin: 15px;
+    transform: rotate(360deg);
+}
+
+#widgets_container div a {
+    color: black;
+    text-decoration: none;
 }
