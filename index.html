@@ -5,14 +5,14 @@
         <link rel="stylesheet" href="style.css">
     </head>
     <body>
-        <div id="about_modal">
+        <div id="about_modal" class="modal">
             <div class="modal_content floating_box center">
                 <img src="imgs/plus.png" class="close_btn" id="about_close_btn">
                 <h1>About</h1>
                 <p>This is Goggle, a spoof of the website <a href="https://www.google.com">Google</a>. This is merely for fun, and I am not in any way claiming to be Google.</p>
             </div>
         </div>
-        <div id="result_modal">
+        <div id="result_modal" class="modal">
             <div class="modal_content floating_box center">
                 <img src="imgs/plus.png" class="close_btn" id="result_close_btn">
                 <img src="imgs/logo.png" class="logo">
@@ -21,6 +21,21 @@
                 <br>
                 <hr>
                 <p>All defintions provided by <a href="https://dictionaryapi.dev/">dictionaryapi.dev</a>. <b>Many</b> thanks!</p>
+            </div>
+        </div>
+        <div id="widget_modal" class="modal">
+            <div class="modal_content floating_box center">
+                <img src="imgs/plus.png" class="close_btn" id="widget_close_btn">
+                <h1>Add a Widget</h1>
+                <form id="widget_form" autocomplete="off">
+                    <label>Widget URL:</label>
+                    <input type="url" id="widget_url" placeholder="Widget URL" required>
+                    <br>
+                    <label>Widget Title:</label>
+                    <input type="text" id="widget_title" placeholder="Widget Title" required>
+                    <br>
+                    <input type="submit" value="Add Widget">
+                </form>
             </div>
         </div>
         <div id="header">
@@ -42,8 +57,8 @@
                     </a>
                 </div>
 
-                <div title="Add a Widget">
-                    <a>
+                <div title="Add a Widget" id="final_widget">
+                    <a id="add_widget">
                         <img src="imgs/plus.png">
                         <p>Add a Widget</p>
                     </a>
@@ -56,5 +71,6 @@
         <script src="modal.js"></script>
         <script src="results.js"></script>
         <script src="night.js"></script>
+        <script src="widgets.js"></script>
     </body>
 </html>
