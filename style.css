@@ -229,7 +229,7 @@ Buttons beneath the search bar:
     padding-top: 7px;
     padding-bottom: 7px;
     background: none;
-    color: var(--search-color);
+    color: var(--maintext-color);
     border: 3px solid var(--search-color);
     border-radius: 4px;
 }
