@@ -10,6 +10,15 @@
                 <img src="imgs/plus.png" class="close_btn" id="about_close_btn">
                 <h1>About</h1>
                 <p>This is Goggle, a spoof of the website <a href="https://www.google.com">Google</a>. This is merely for fun, and I am not in any way claiming to be Google.</p>
+                <p>
+                    I used the following resources to power this website:
+                    <br>
+                    <a href="https://dictionaryapi.dev">dictionaryapi.dev</a>: Get word defintions</li>
+                    <br>
+                    <a href="https://random-word-api.herokuapp.com">random-word-api.herokuapp.com</a>: Get random word</li>
+                    <br>
+                    I thank each of those websites for their services.
+                </p>
             </div>
         </div>
         <div id="result_modal" class="modal">
@@ -49,6 +58,10 @@
                     <input id="search_field" type="text" placeholder="Search Goggle for a word...">
                 </form>
             </div>
+            <div id="button_bar">
+                <button id="submit_query" class="btn">Goggle Search</button>
+                <button id="random_word" class="btn">I'm Feeling Lucky</button>
+            </div>
             <div id="widgets_container">
                 <div title="Free Dictiory API">
                     <a href="https://dictionaryapi.dev">
@@ -72,5 +85,6 @@
         <script src="results.js"></script>
         <script src="night.js"></script>
         <script src="widgets.js"></script>
+        <script src="buttons.js"></script>
     </body>
 </html>
