@@ -44,7 +44,7 @@ if (currentCookies != undefined) {
     }
 } else {
     currentCookies = JSON.stringify([[]]);
-    widgets = [[]];
+    widgets = [];
 }
 
 widgetForm.onsubmit = function() {
