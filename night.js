@@ -24,3 +24,12 @@ if (usesDarkTheme) {
 
 
 }
+
+document.getElementById("night_btn").onclick = function() {
+    if (usesDarkTheme) {
+        document.cookie = "usesDarkTheme=false";
+    } else {
+        document.cookie = "usesDarkTheme=true";
+    }
+    location.reload();
+}

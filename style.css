@@ -158,3 +158,22 @@ About modal:
     from {top: -300px; opacity: 0}
     to {top: 0; opacity: 1}
 }
+
+#night_btn {
+    border: none;
+    background: transparent;
+    color: var(--maintext-color);
+}
+
+#night_btn:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+#footer {
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    left: 0px;
+    padding: 20px;
+}
