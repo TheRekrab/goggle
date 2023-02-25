@@ -163,6 +163,8 @@ About modal:
     border: none;
     background: transparent;
     color: var(--maintext-color);
+    float: right;
+    margin: 20px;
 }
 
 #night_btn:hover {
@@ -170,10 +172,22 @@ About modal:
     cursor: pointer;
 }
 
+#header {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 97%;
+    padding: 20px;
+    padding-left: 1.5%;
+    padding-right: 1.5%;
+}
+
 #footer {
     position: absolute;
     bottom: 0px;
-    width: 100%;
+    width: 95%;
     left: 0px;
     padding: 20px;
+    padding-left: 2.5%;
+    padding-right: 2.5%;
 }
