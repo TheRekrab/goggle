@@ -23,9 +23,9 @@ function update() {
     }
 
     for (img of document.getElementsByTagName("img")) {
-        if (img.src.includes("imgs/plus.png")) {
+        if (img.src.includes("imgs/plus.png") && usesDarkTheme) {
             img.src = img.src.replace("plus", "plus_dark");
-        } else if (img.src.includes("imgs/plus_dark.png")) {
+        } else if (img.src.includes("imgs/plus_dark.png") && !usesDarkTheme) {
             img.src = img.src.replace("plus_dark", "plus");
         }
     }
