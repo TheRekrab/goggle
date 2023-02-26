@@ -18,7 +18,9 @@ async function getDefinitions() {
 
     // check to make sure it's a word:
 
-    if ("title" in obj) {
+    const responseCode = res.status;
+
+    if (responseCode) {
         html += "Sorry, pal. No definitions of that word could be found.";
         element.innerHTML = html;
         return;
