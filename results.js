@@ -20,7 +20,7 @@ async function getDefinitions() {
 
     const responseCode = res.status;
 
-    if (responseCode) {
+    if (responseCode == 404) {
         html += "Sorry, pal. No definitions of that word could be found.";
         element.innerHTML = html;
         return;
