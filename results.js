@@ -28,7 +28,7 @@ async function getDefinitions() {
 
     let phonetics = obj[0].phonetics;
 
-    for (ph of phonetics) {
+    for (let ph of phonetics) {
         if ("text" in ph) {
             html += `Phonteics: <i><span class="word">${ph.text}</span></i><br>`;
             break;
@@ -39,7 +39,7 @@ async function getDefinitions() {
 
     let results = obj[0]["meanings"];
 
-    for (result of results) {
+    for (let result of results) {
         let partOfSpeech = result.partOfSpeech;
         let definition = result.definitions[0].definition;
         html += `<span class="word">${partOfSpeech}</span>: ${definition}<br>`;

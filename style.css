@@ -26,6 +26,7 @@ a {
     margin: 100px auto;
     box-shadow: 0px 0px 10px 1px var(--shadow-color);
     border-radius: 20px;
+    color: var(--maintext-color);
 }
 
 .close_btn {
@@ -141,7 +142,6 @@ About modal:
     position: relative;
     animation-name: animatetop;
     animation-duration: 0.4s;
-    color: var(--maintext-color);
 }
 
 #about_btn {
