@@ -5,7 +5,7 @@ searchButton.onclick = document.getElementById("search_form").onsubmit;
 let feelingLucky = document.getElementById("random_word");
 
 async function getRandomWord() {
-    const url = "https://random-word-api.herokuapp.com/word?length=5&number=10";
+    const url = "https://random-word-api.herokuapp.com/word";
 
     let obj;
 
