@@ -19,14 +19,16 @@ a {
 }
 
 .center {
-    margin: 100px auto;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    margin: auto;
     text-align: center;
 }
 
 .floating_box {
-    width: 700px;
+    width: 40%;
     padding: 20px;
-    margin: 100px auto;
     box-shadow: 0px 0px 10px 1px var(--shadow-color);
     border-radius: 20px;
     color: var(--maintext-color);
