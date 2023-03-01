@@ -19,7 +19,10 @@ a {
 }
 
 .center {
-    margin: 100px auto;
+    margin: 0px auto;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
     text-align: center;
 }
 
