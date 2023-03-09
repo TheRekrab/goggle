@@ -55,7 +55,9 @@ async function getDefinitions() {
 document.getElementById("search_form").onsubmit = function() {
     document.getElementById("result_modal").style.display = "block";
     document.getElementById("search_field").value = "";
+    alert("About to start the waiting screen!");
     startWaiting();
+    alert("The screen has started!");
     getDefinitions();
     return false;
 }
