@@ -1,4 +1,14 @@
-async function getDefinitions(query) {
+async function getDefinitions(userQuery) {
+
+    // no empty querys:
+
+    const query = userQuery.trim();
+
+    if (!query) {
+        document.getElementById("result_title").innerHTML = "Please no not enter any empty queries.";
+        document.getElementById("result").innerHTML = "Don't do it. It's not a word.";
+        return;
+    }
     
     const URL = `https://api.dictionaryapi.dev/api/v2/entries/en/${query}`;
 
