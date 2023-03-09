@@ -1,5 +1,5 @@
 // the actually important one:
-export async function startWaiting() {
+export function startWaiting() {
     let textElement = document.getElementById("result");
     let titleElement = documebt.getElementById("result_title");
 
