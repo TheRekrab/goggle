@@ -1,3 +1,5 @@
+import { startWaiting } from "/waiting";
+
 async function getDefinitions() {
     // get query:
     let query = document.getElementById("search_field").value;
@@ -51,8 +53,9 @@ async function getDefinitions() {
 }
 
 document.getElementById("search_form").onsubmit = function() {
-    getDefinitions();
     document.getElementById("result_modal").style.display = "block";
     document.getElementById("search_field").value = "";
+    startWaiting();
+    getDefinitions();
     return false;
 }
