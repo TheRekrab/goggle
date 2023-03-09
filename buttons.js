@@ -4,6 +4,8 @@ searchButton.onclick = document.getElementById("search_form").onsubmit;
 
 let feelingLucky = document.getElementById("random_word");
 
+let showSpinner = true;
+
 async function getRandomWord() {
     const url = "https://random-word-api.herokuapp.com/word";
 
@@ -26,20 +28,24 @@ async function isWord(word) {
 
 feelingLucky.onclick = async function() {
 
-    startWaiting();
-    
+    if (showSpinner) {
+        startWaiting();
+    }
+
     // Check to make sure that it is a word!
 
     let randomWord;
 
     while (true) {
         randomWord = await getRandomWord(); // get another word
+        showSpinner = false;
         let isValidWord = await isWord(randomWord);
         if (isValidWord) {
             break;
         }
     }
 
+    showSpinner = true;
 
     document.getElementById("search_field").value = randomWord;
     searchButton.onclick();
