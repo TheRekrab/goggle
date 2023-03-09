@@ -246,18 +246,17 @@ Buttons beneath the search bar:
 }
 
 .loader {
-    display: block;
-    width: 100px;
-    height: 100px;
-    border-radius: 100%;
-    border: none;
-    border-top: 10px solid dodgerblue;
-    animation-name: spin;
-    animation-iteration-count: infinite;
-    animation-duration: 1s;
+    display: inherit;
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+    border: 20px solid transparent;
+    border-bottom: 20px solid dodgerblue;
+    animation: 1.5s linear infinite spin;
+    margin: auto;
 }
 
-@keyframes load {
+@keyframes spin {
     from {transform: rotate(0deg);}
     to {transform: rotate(360deg);}
 }

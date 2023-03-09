@@ -1,9 +1,5 @@
-import { startWaiting } from "/waiting";
-
-async function getDefinitions() {
-    // get query:
-    let query = document.getElementById("search_field").value;
-
+async function getDefinitions(query) {
+    
     const URL = `https://api.dictionaryapi.dev/api/v2/entries/en/${query}`;
 
     let obj;
@@ -53,9 +49,12 @@ async function getDefinitions() {
 }
 
 document.getElementById("search_form").onsubmit = function() {
-    document.getElementById("result_modal").style.display = "block";
-    document.getElementById("search_field").value = "";
     startWaiting();
-    getDefinitions();
+    
+    let searchBar = document.getElementById("search_field");
+    let searchQuery = searchBar.value;
+    searchBar.value = "";
+
+    getDefinitions(searchQuery);
     return false;
 }

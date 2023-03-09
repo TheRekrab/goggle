@@ -25,6 +25,9 @@ async function isWord(word) {
 }
 
 feelingLucky.onclick = async function() {
+
+    startWaiting();
+    
     // Check to make sure that it is a word!
 
     let randomWord;
