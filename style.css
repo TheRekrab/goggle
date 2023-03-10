@@ -152,7 +152,8 @@ About modal:
 }
 
 #result {
-    overflow: scroll;
+    overflow-wrap: normal;
+    overflow-y: visible;
     max-height: 80%;
 }
 
