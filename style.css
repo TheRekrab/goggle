@@ -153,6 +153,7 @@ About modal:
 
 #result {
     overflow: scroll;
+    max-height: 80%;
 }
 
 #about_btn {
