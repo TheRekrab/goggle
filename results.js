@@ -50,7 +50,6 @@ async function getDefinitions(userQuery) {
     let results = obj[0]["meanings"];
 
     for (let result of results) {
-        console.log(result);
         let partOfSpeech = result.partOfSpeech;
         let definitions = result.definitions;
         let count = 0;
